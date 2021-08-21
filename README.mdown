@@ -1,0 +1,13 @@
+# Scripts for MDBooks
+
+These scripts are for helping with creating and editing MDBooks
+
+---
+
+### move.sh
+`params: Name NewUrl`  
+This is for when you want to move a file. It will rename all the Urls to the new one you give, it matches to the name you give.
+
+### rename.sh
+`params: NewName Url`
+This is for when you want to rename something to a new one. It will rename all instances with the new one you give, it matches to the url you give.
