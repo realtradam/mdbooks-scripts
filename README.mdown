@@ -11,3 +11,22 @@ This is for when you want to move a file. It will rename all the Urls to the new
 ### rename.sh
 `params: NewName Url`
 This is for when you want to rename something to a new one. It will rename all instances with the new one you give, it matches to the url you give.
+
+---
+# TODO:
+needs to be able to understand that mdown and html are "the same"
+for example both of these should be replace:
+```
+// replace url from car to plane 
+
+[vehicle](./car.mdown)
+// becomes:
+[vehicle](./plane.mdown)
+
+[vehicle](/car.html#doors)
+// becomes:
+[vehicle](/plane.html#doors)
+```
+So in general it needs to be able to do the following:
+1. ignore the part after the extension and maintain it(e.g `.mdown` or `.html#header`
+2. ignore the `./` or `/` at the beginning of a url if it is there, but also be ok with them not being there
